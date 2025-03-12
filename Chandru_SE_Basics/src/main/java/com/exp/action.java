@@ -15,6 +15,8 @@ public class action {
 	   action.moveToElement(blogsmenuElement).perform();
 	   WebElement Option2 = driver.findElement(By.xpath("//span[text()='SeleniumByArun']"));
 	   action.moveToElement(Option2).click().build().perform();
+	   //updated
+	   //retest
    }
 
 }
