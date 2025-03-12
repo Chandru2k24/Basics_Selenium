@@ -1,7 +1,9 @@
 package com.exp;
-
+import java.util.Collections;
 import java.time.Duration;
+import java.util.Collections;
 import java.util.List;
+import java.util.*;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -27,19 +29,29 @@ public class LEAFGROUND2 {
 		  WebElement checkbox=driver1.findElement(By.xpath("//li[@id=\"menuform:m_checkbox\"]"));
 		  checkbox.click();
 		  System.out.println("drop down completed");
-		  WebElement check=driver1.findElement(By.xpath("//table[@class=\"ui-selectmanycheckbox ui-widget\"]//descendant::tr//td"));
-		  check.click();
-		  WebElement checkbox1=driver1.findElement(By.xpath("//div[@id=\"j_idt87:multiple\"]"));
-		  checkbox1.click();
-		  List<WebElement> checkboxes = driver1.findElements(By.xpath("//ul[@class=\"ui-selectcheckboxmenu-items ui-selectcheckboxmenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset\"]//li//label"));
-	        for (WebElement box : checkboxes) {
+		  WebElement check=driver1.findElement(By.xpath("//ul[@class=\"ui-selectcheckboxmenu-multiple-container ui-widget ui-inputfield ui-state-default ui-corner-all\"]"));
+		  Actions b=new Actions(driver1);
+		  b.moveToElement(check).click().perform();
+		  System.out.println("completed");
+		  List<WebElement> allopt=driver1.findElements(By.xpath("//ul[@class=\"ui-selectcheckboxmenu-items ui-selectcheckboxmenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset\"]//li//label"));
+		  for (WebElement box : allopt) {
+			  System.out.println("option"+box.getText());
 	            if (!box.isSelected()) {
 	                box.click();
 	            }
 	        }
-	        
-	        System.out.println("All checkboxes selected");
-	    }
-	
+		  WebElement ele1=driver1.findElement(By.xpath("//i[@class=\"pi pi-server layout-menuitem-icon\"]"));
+		  ele1.click();
+		  WebElement checkbox1=driver1.findElement(By.xpath("//li[@id=\"menuform:m_radio\"]"));
+		  checkbox1.click();
+		 // Collections.sort(allopt);
+		 
+		  
+		  
+
+		  
+		  
+
 	}
 
+}
