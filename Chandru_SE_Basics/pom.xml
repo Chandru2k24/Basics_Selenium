@@ -119,7 +119,8 @@
             <mainClass>com.exp.select1</mainClass>
             <mainClass>com.exp.selectmethod</mainClass>
             <mainClass>com.exp.task1123</mainClass>
-              
+              <mainClass>com.exp.Keyboardactions</mainClass>
+              <mainClass>com.exp.contextclick</mainClass>
                <!-- Replace with actual main class -->
             </configuration>
           </execution>
