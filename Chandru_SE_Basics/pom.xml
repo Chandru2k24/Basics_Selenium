@@ -121,6 +121,7 @@
             <mainClass>com.exp.task1123</mainClass>
               <mainClass>com.exp.Keyboardactions</mainClass>
               <mainClass>com.exp.contextclick</mainClass>
+              <mainClass>com.exp.Webelementactions</mainClass>
                <!-- Replace with actual main class -->
             </configuration>
           </execution>
