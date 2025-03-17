@@ -112,20 +112,7 @@
             <goals>
               <goal>java</goal>
             </goals>
-            <configuration>
-            <mainClass>com.exp.LEAFGROUND2</mainClass>
-            <mainClass>com.exp.action</mainClass>
-            <mainClass>com.exp.Question3</mainClass>
-            <mainClass>com.exp.select1</mainClass>
-            <mainClass>com.exp.selectmethod</mainClass>
-            <mainClass>com.exp.task1123</mainClass>
-              <mainClass>com.exp.Keyboardactions</mainClass>
-              <mainClass>com.exp.contextclick</mainClass>
-              <mainClass>com.exp.Webelementactions</mainClass>
-              <mainClass>com.exp.omayoblogpopup1303</mainClass>
-              
-               <!-- Replace with actual main class -->
-            </configuration>
+            
           </execution>
         </executions>
       </plugin>
