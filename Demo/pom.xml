@@ -117,8 +117,8 @@
           <version>3.14.0</version> <!-- Specify the version you want to use -->
           <configuration>
             <!-- Set the source and target Java versions -->
-            <source>17</source>
-            <target>17</target>
+            <source>21</source>
+            <target>21</target>
           </configuration>
         
       </plugin>
